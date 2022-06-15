@@ -1,0 +1,195 @@
+.footer {
+    background-color: $hero-background;
+    padding: 60px 0px;
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+        }
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
+
+        color: $hero-color;
+
+        font-family: raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+    }
+
+    &__logo-accent {
+        color: $brand-color;
+    }
+
+    &__text {
+        display: block;
+        line-height: 24px;
+    }
+
+    &__address {
+        color: #FFFFFF;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    &__address-contacts {
+        display: flex;
+        margin-top: 9px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+
+        transition: background-color $transition-duration $transition-timing-function;
+
+        &:hover,
+        &:focus {
+            color: $brand-color;
+        }
+    }
+
+
+    &-slogan {
+        color: $hero-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    &-accession {
+        margin-left: 70px;
+        margin-right: auto;
+
+
+    &__list {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__link {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            width: 44px;
+            height: 44px;
+        
+            color: $hero-color;
+        background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        
+            transition: background-color $transition-duration $transition-timing-function,
+                color $transition-duration $transition-timing-function;
+        
+
+        
+        &:hover,
+        &:focus {
+            color: $main-background;
+            background-color: $brand-color;
+        }
+    }
+
+
+
+
+        &__icon {
+
+            fill: currentColor;
+        }
+    }
+
+    .footer-form {
+        &__wrapper {
+            display: flex;
+            align-items: center;
+
+            margin-top: 20px;
+        }
+
+        &__label {
+            display: flex;
+
+            @media screen and (max-width: $tablet) {
+                flex-direction: column;
+            }
+        }
+
+        &__input {
+            width: 358px;
+            height: 50px;
+            padding-left: 16px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            color: $hero-color;
+            background-color: $hero-background;
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+            transition: border-color $transition-timing-function $transition-duration;
+
+            &:hover,
+            &:focus {
+                border: 1px solid $brand-color;
+                outline: none;
+            }
+            &::placeholder {
+                font-size: 16px;
+                line-height: 1.25;
+                letter-spacing: 0.03em;
+            
+                color: $contact-color;
+                outline: none;
+            }
+        }
+    }
+
+    .footer__button {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+        transition: box-shadow $transition-duration $transition-timing-function,
+            background-color $transition-duration $transition-timing-function,
+            color $transition-duration $transition-timing-function;
+
+            &:hover {
+            background-color: $backgraund-hover;
+        }
+
+        &-title {
+            margin-left: 29px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+    }
+}
