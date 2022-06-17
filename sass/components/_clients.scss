@@ -18,11 +18,17 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
+        margin: -15px;
     }
 
-    &__item {&:not(:last-child) {
-        margin-right: 30px;
-    }}
+    &__item {
+        
+    flex: gap;
+    margin: 15px;/*
+     &:not(:last-child) {
+        margin: 15px;
+    }*/} 
 
     &__link {
         display: flex;
