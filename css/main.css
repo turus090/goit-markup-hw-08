@@ -348,15 +348,16 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .mobile-socials__item {
   padding: 0 15px;
 }
 .mobile-socials__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-socials__link {
+  font-size: 18px;
+  color: #2196f3;
 }
 
 .contacts__list {
@@ -477,6 +478,13 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .section-hero__title {
+    font-size: 26px;
+  }
 }
 
 .button {
@@ -570,7 +578,7 @@ button {
   padding-bottom: 94px;
   background-color: #ffffff;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .doin {
     display: none;
   }
@@ -851,6 +859,11 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding-bottom: 60px;
   }
 }
 .footer__contacts {
@@ -859,6 +872,16 @@ button {
 @media screen and (min-width: 1200px) {
   .footer__contacts {
     text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__contacts {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    margin-right: 165px;
   }
 }
 .footer__logo {
@@ -908,8 +931,20 @@ button {
   letter-spacing: 0.03em;
 }
 .footer-accession {
-  margin-left: 70px;
-  margin-right: auto;
+  /* margin-left: 70px;
+  margin-right: auto;*/
+}
+@media screen and (min-width: 768px) {
+  .footer-accession {
+    margin-left: 70px;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-accession {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
 .footer-accession__list {
   display: -webkit-box;
@@ -946,6 +981,19 @@ button {
 .footer-accession__icon {
   fill: currentColor;
 }
+@media screen and (max-width: 768px) {
+  .footer .footer-form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer .footer-form {
+    text-align: center;
+  }
+}
 .footer .footer-form__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -963,6 +1011,28 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-form__label {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer .footer-form__label {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-form__label {
@@ -1027,6 +1097,16 @@ button {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-form__input {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer .footer-form__input {
+    margin-bottom: 20px;
+  }
 }
 .footer .footer__button {
   display: -webkit-box;
@@ -1415,6 +1495,13 @@ button {
   margin-top: 0px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+  .projects-filter {
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1423,6 +1510,13 @@ button {
       flex-wrap: wrap;
   margin: -15px;
   list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .projects-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .projects .pro-item {
   margin: 15px;

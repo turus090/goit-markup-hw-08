@@ -20,6 +20,9 @@
 
         @media screen and (min-width: $tablet) {
             flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 60px;
         }
     }
 
@@ -28,6 +31,17 @@
 
         @media screen and (min-width: $desktop) {
             text-align: left;
+        }
+
+        @media screen and (max-width: $tablet) {
+
+            margin-bottom: 60px;
+
+        }
+
+        @media screen and (min-width: $tablet) {
+            margin-right: 165px;
+
         }
     }
 
@@ -90,9 +104,20 @@
     }
 
     &-accession {
-        margin-left: 70px;
-        margin-right: auto;
+        /* margin-left: 70px;
+        margin-right: auto;*/
 
+        @media screen and (min-width: $tablet) {
+            margin-left: 70px;
+            margin-right: auto;
+        }
+
+
+
+        @media screen and (max-width: $tablet) {
+            margin-bottom: 60px;
+            text-align: center;
+        }
 
         &__list {
             display: flex;
@@ -135,20 +160,46 @@
     }
 
     .footer-form {
+
+        @media screen and (max-width: $tablet) {
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        @media screen and (max-width: $desktop) {
+            text-align: center;
+
+        }
+
         &__wrapper {
             display: flex;
             align-items: center;
 
             margin-top: 20px;
+
         }
 
         &__label {
             display: flex;
             flex-direction: column;
 
+            @media screen and (max-width: $tablet) {
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            }
+
+            @media screen and (max-width: $desktop) {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
             @media screen and (min-width: $desktop) {
                 flex-direction: row;
             }
+
         }
 
         &__input {
@@ -181,6 +232,16 @@
 
                 color: $contact-color;
                 outline: none;
+            }
+
+            @media screen and (max-width: $tablet) {
+                margin-bottom: 20px;
+
+            }
+
+            @media screen and (max-width: $desktop) {
+                margin-bottom: 20px;
+
             }
         }
     }

@@ -42,6 +42,12 @@
         justify-content: center;
         margin-top: 0px;
         margin-bottom: 50px;
+
+        @media screen and (max-width: $tablet) {
+
+            gap: 10px;
+            flex-wrap: wrap
+        }
     }
 
 
@@ -54,6 +60,11 @@
         flex-wrap: wrap;
         margin: -15px;
         list-style: none;
+
+        @media screen and (max-width: $tablet) {
+            justify-content: center;
+
+        }
     }
 
     .pro-item {
