@@ -40,7 +40,7 @@
      transition: transform $transition-duration $transition-timing-function;
 
      @media screen and (max-width: 768px) {
-
+         width: 100%;
          top: 50%;
          left: 50%;
          transform: translate(-50%, -50%);
@@ -112,6 +112,12 @@
      line-height: 1.15;
      text-align: center;
      letter-spacing: 0.03em;
+
+     @media screen and (max-width: $tablet) {
+         display: flex;
+         flex-wrap: wrap;
+         width: 100%;
+     }
  }
 
  .form-field {
@@ -141,6 +147,10 @@
      transition: border-color $transition-timing-function $transition-duration;
      /* outline-color $(--transition-timing-function) $(--transition-duration);*/
      outline: none;
+
+     @media screen and (max-width: $tablet) {
+         width: 100%;
+     }
  }
 
  .form-comment:hover {
@@ -216,8 +226,11 @@
      cursor: pointer;
      resize: none;
      outline: none;
-     transition: border-color $transition-timing-function $transition-duration,
-         /*outline-color $(--transition-timing-function) $(--transition-duration);*/
+     transition: border-color $transition-timing-function $transition-duration;
+
+     @media screen and (max-width: $tablet) {
+         width: 100%;
+     }
  }
 
  .form-comment::placeholder {

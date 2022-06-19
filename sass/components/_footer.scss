@@ -192,25 +192,29 @@
 
             margin-top: 20px;
 
+            @media screen and (max-width: $tablet) {
+                flex-wrap: wrap;
+            }
+
         }
 
         &__label {
-            display: flex;
-            flex-direction: column;
+            /*display: flex;
+            flex-direction: column;*/
 
             @media screen and (max-width: $tablet) {
-                align-items: center;
-                text-align: center;
-                justify-content: center;
+                display: flex;
+                flex-direction: column;
             }
 
             @media screen and (max-width: $desktop) {
-                align-items: center;
-                justify-content: center;
-                text-align: center;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
             }
 
             @media screen and (min-width: $desktop) {
+                display: flex;
                 flex-direction: row;
 
             }
@@ -218,7 +222,8 @@
         }
 
         &__input {
-            width: 358px;
+            display: block;
+            width: 450px;
             height: 50px;
             padding-left: 16px;
             padding-top: 15px;
@@ -249,14 +254,33 @@
                 outline: none;
             }
 
-            @media screen and (max-width: $tablet) {
+            @media screen and (max-width: $desktop) {
                 margin-bottom: 20px;
 
             }
 
+            /*
             @media screen and (max-width: $desktop) {
                 margin-bottom: 20px;
 
+            }*/
+
+            /*  @media screen and (min-width: 768px) {
+                width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+            }*/
+
+            @media screen and (min-width: 1200px) {
+                width: 358px;
+                margin-right: 12px;
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+
+            @media screen and (max-width: $tablet) {
+                flex-wrap: wrap;
+                width: 100%;
             }
         }
     }
@@ -278,6 +302,11 @@
             margin-top: 10px;
             margin-bottom: 10px;
             margin-right: 10px;
+        }
+
+        @media screen and (max-width: $desktop) {
+            margin: auto;
+
         }
     }
 }

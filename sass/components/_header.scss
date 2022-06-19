@@ -209,8 +209,11 @@
 .mobile-socials {
     display: flex;
 
+    flex-wrap: wrap;
+    white-space: nowrap;
 
     &__item {
+        margin-bottom: 5px;
         padding: 0 15px;
 
     }
@@ -285,6 +288,7 @@
 
     @media screen and (max-width: $tablet) {
         &.contacts__phone {
+            white-space: nowrap;
             font-size: 34px;
         }
     }
