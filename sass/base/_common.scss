@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0px;   
+    margin: 0px;
 }
 
 p {
@@ -51,20 +51,24 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-    
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
     @media screen and (min-width: $tablet) and (max-width:1199px) {
-            width: 768px;
-        }
-    
+        width: $tablet;
+    }
+
     @media screen and (min-width: $desktop) {
-            width: 1200px;
-        }
+        width: $desktop;
+    }
 }
 
 @media screen and (max-width: 480px) {

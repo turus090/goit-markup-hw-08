@@ -39,14 +39,19 @@
 
     &-filter {
         display: flex;
-        justify-content: center;
+
         margin-top: 0px;
         margin-bottom: 50px;
 
         @media screen and (max-width: $tablet) {
 
             gap: 10px;
-            flex-wrap: wrap
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: $tablet) {
+            justify-content: center;
+
         }
     }
 
@@ -86,7 +91,11 @@
     }
 
     .pro-item-link {
-        display: inline-block;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+
+
         text-decoration: none;
         transition: box-shadow $transition-duration $transition-timing-function;
 
@@ -98,15 +107,15 @@
 
 
 
-    .pro-item a {
-        display: inline-block
-    }
+
 
     .pro-item-title {
+        flex-grow: 1;
         padding: 20px 24px 20px 24px;
         border-bottom: 1px solid #EEEEEE;
         border-left: 1px solid #EEEEEE;
         border-right: 1px solid #EEEEEE;
+
     }
 
     &-name {

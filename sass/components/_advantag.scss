@@ -1,7 +1,7 @@
 .advantag {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: $main-background;  
+    background-color: $main-background;
 
     &__list {
         display: flex;
@@ -15,7 +15,8 @@
 
         @media screen and (min-width: $tablet) {
             width: 354px;
-            flex-grow: 0;        }
+            flex-grow: 0;
+        }
 
         @media screen and (min-width: $desktop) {
             width: 270px;
@@ -31,6 +32,10 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        @media screen and (max-width: $tablet) {
+            text-align: center;
+        }
     }
 
     &__text {
@@ -52,10 +57,6 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    
-}
+@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 1200px) {
-   
-}
+@media screen and (max-width: 1200px) {}
