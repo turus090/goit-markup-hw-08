@@ -1120,6 +1120,9 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1381,6 +1384,11 @@ button {
     width: 100%;
   }
 }
+@media screen and (max-width: 1200px) {
+  .form-title {
+    width: 100%;
+  }
+}
 
 .form-field {
   position: relative;
@@ -1417,6 +1425,11 @@ button {
   outline: none;
 }
 @media screen and (max-width: 768px) {
+  .form-input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
   .form-input {
     width: 100%;
   }
@@ -1500,6 +1513,11 @@ button {
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 @media screen and (max-width: 768px) {
+  .form-comment {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
   .form-comment {
     width: 100%;
   }

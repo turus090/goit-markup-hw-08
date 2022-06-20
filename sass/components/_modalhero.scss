@@ -119,6 +119,10 @@
          flex-wrap: wrap;
          width: 100%;
      }
+
+     @media screen and (max-width: $desktop) {
+         width: 100%;
+     }
  }
 
  .form-field {
@@ -150,6 +154,10 @@
      outline: none;
 
      @media screen and (max-width: $tablet) {
+         width: 100%;
+     }
+
+     @media screen and (max-width: $desktop) {
          width: 100%;
      }
  }
@@ -230,6 +238,10 @@
      transition: border-color $transition-timing-function $transition-duration;
 
      @media screen and (max-width: $tablet) {
+         width: 100%;
+     }
+
+     @media screen and (max-width: $desktop) {
          width: 100%;
      }
  }
