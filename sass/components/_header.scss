@@ -212,11 +212,31 @@
     flex-wrap: wrap;
     white-space: nowrap;
 
+    &:not(:first-child) {
+        padding-left: 0px;
+    }
+
+    &:not(:last-child) {
+        padding-right: 0px;
+    }
+
     &__item {
         margin-bottom: 5px;
-        padding: 0 15px;
+
+
 
     }
+
+    &__item:not(:first-child) {
+        padding-left: 15px;
+    }
+
+    &__item:not(:last-child) {
+        padding-right: 15px;
+    }
+
+
+
 
     &__item:not(:last-child) {
         border-right: 1px solid $mobile-social-border;
@@ -227,6 +247,8 @@
         color: $brand-color;
 
     }
+
+
 }
 
 .contacts__list {
@@ -258,7 +280,16 @@
     @media screen and (max-width: $tablet) {
         margin-bottom: 32px;
     }
+
+    &__phone {
+        @media screen and (max-width: 350px) {
+            font-size: 30px;
+        }
+
+    }
 }
+
+
 
 .contacts__link {
     display: flex;
@@ -292,7 +323,18 @@
             font-size: 34px;
         }
     }
+
+
+    @media screen and (max-width: 350px) {
+        &.contacts__phone {
+            font-size: 30px;
+        }
+    }
 }
+
+
+
+
 
 .contacts__icon {
     display: none;

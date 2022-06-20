@@ -357,9 +357,20 @@ button {
       flex-wrap: wrap;
   white-space: nowrap;
 }
+.mobile-socials:not(:first-child) {
+  padding-left: 0px;
+}
+.mobile-socials:not(:last-child) {
+  padding-right: 0px;
+}
 .mobile-socials__item {
   margin-bottom: 5px;
-  padding: 0 15px;
+}
+.mobile-socials__item:not(:first-child) {
+  padding-left: 15px;
+}
+.mobile-socials__item:not(:last-child) {
+  padding-right: 15px;
 }
 .mobile-socials__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -409,6 +420,11 @@ button {
     margin-bottom: 32px;
   }
 }
+@media screen and (max-width: 350px) {
+  .contacts__item__phone {
+    font-size: 30px;
+  }
+}
 
 .contacts__link {
   display: -webkit-box;
@@ -443,6 +459,11 @@ button {
   .contacts__link.contacts__phone {
     white-space: nowrap;
     font-size: 34px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .contacts__link.contacts__phone {
+    font-size: 30px;
   }
 }
 
@@ -1038,6 +1059,9 @@ button {
 .footer-accession__icon {
   fill: currentColor;
 }
+.footer .footer-form {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .footer .footer-form {
     -webkit-box-pack: center;
@@ -1253,14 +1277,15 @@ button {
 }
 
 .modal {
+  width: calc(100% - 30px);
   overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  /*scale(1.1)*/
+  max-width: 450px;
   padding: 40px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -1279,6 +1304,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    max-width: 528px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
