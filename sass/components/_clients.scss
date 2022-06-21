@@ -23,12 +23,24 @@
     }
 
     &__item {
-        
-    flex: gap;
-    margin: 15px;/*
+
+        flex: gap;
+        margin: 15px;
+
+        /*
      &:not(:last-child) {
         margin: 15px;
-    }*/} 
+    }*/
+        @media screen and (max-width: $desktop) {
+            width: 226px;
+            height: 92px;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 210px;
+            height: 92px;
+        }
+    }
 
     &__link {
         display: flex;
@@ -50,8 +62,18 @@
         &:focus {
             border: 1px solid $brand-color;
             color: $brand-color;
-    }
         }
+
+        @media screen and (max-width: $desktop) {
+            width: 226px;
+            height: 92px;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 210px;
+            height: 92px;
+        }
+    }
 
 
     &__icon {

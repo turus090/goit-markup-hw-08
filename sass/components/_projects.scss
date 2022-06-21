@@ -141,6 +141,33 @@
     .pro-item-wrap {
         position: relative;
         overflow: hidden;
+
+        @media screen and (max-whidth: $tablet) {
+            &__img {
+                width: 450px;
+            }
+        }
+
+        @media screen and (max-whidth: $desktop) {
+            &__img {
+                width: 354px;
+            }
+        }
+
+
+    }
+
+    .pro-item-wrap__img {
+        @media screen and (max-whidth: $tablet) {
+
+            width: 450px;
+        }
+
+        @media screen and (max-whidth: $desktop) {
+
+            width: 354px;
+        }
+
     }
 
 
@@ -165,7 +192,13 @@
         transition: transform $transition-duration $transition-timing-function;
 
         @media screen and (max-width: $tablet) {
-            padding: 5px 5px;
+            padding: 77px 24px;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: $desktop) {
+            padding: 49px 24px 77px 24px;
             width: 100%;
             height: 100%;
         }
